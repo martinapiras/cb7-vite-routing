@@ -1,0 +1,36 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding: $padding-gen;
+  box-shadow: $elevation-small;
+
+  .logo {
+    width: 50%;
+
+    @include lg {
+      width: 20%;
+    }
+  }
+
+  .navigation {
+    width: 50%;
+
+    @include lg {
+      width: 80%;
+    }
+  }
+
+  .navLinks {
+    @include flexbox-hrz(10px);
+    list-style-type: none;
+    padding: 0;
+    flex-wrap: wrap;
+
+    .navLink * {
+      text-decoration: none;
+      width: 50%;
+    }
+  }
+}
