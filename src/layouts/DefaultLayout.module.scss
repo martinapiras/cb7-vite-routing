@@ -1,0 +1,10 @@
+.DefaultLayout {
+  min-height: 100vh;
+  //   display: flex;
+  //   flex-direction: column;
+  @include flexbox-vrt(0px);
+
+  .content {
+    margin-top: 100px;
+  }
+}
