@@ -13,3 +13,21 @@
   align-items: safe center;
   gap: $gap;
 }
+
+@mixin mobile-hidden {
+  @include xs {
+    display: none;
+  }
+}
+
+@mixin tablet-hidden {
+  @include md {
+    display: none;
+  }
+}
+
+@mixin desktop-hidden {
+  @include lg {
+    display: none;
+  }
+}
