@@ -7,7 +7,7 @@ const DefaultLayout = ({ children }) => {
   return (
     <div className={styles.DefaultLayout}>
       <Header />
-      <div className={styles.content}>
+      <div className={`${styles.content} col-12`}>
         {children}
         <Outlet />
       </div>

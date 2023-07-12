@@ -12,7 +12,9 @@ import LocationsList from "./routes/Locations";
 import Locations from "./routes/Locations/Locations.jsx";
 import About from "./routes/About";
 import Contacts from "./routes/Contacts/";
-import "./index.css";
+import Login from "./components/Login";
+import "./index.scss";
+import { Dashboard } from "./routes/Dashboard";
 
 // const router = createBrowserRouter([
 //   {
@@ -45,6 +47,8 @@ const router = createBrowserRouter(
       <Route path="/locations/:id" element={<Locations />} />
       <Route path="/about" element={<About />} />
       <Route path="/contacts" element={<Contacts />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/dashboard" element={<Dashboard />} />
     </Route>
   )
 );
